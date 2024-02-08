@@ -3,22 +3,38 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+    <div class="card text-center">
+      <div class="card-header">Funding</div>
+      <div class="card-body">
+        <h5 class="card-title">Balance: 20 ETH </h5>
+        {/* <p class="card-text">
+          Account : {account ? account : "not connected"}
+        </p> */}
+        {/* <button
+          type="button"
+          class="btn btn-success"
+          onClick={async () => {
+            const accounts = await window.ethereum.request({
+              method: "eth_requestAccounts",
+            });
+            console.log(accounts);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Connect to metamask
+        </button> */}
+        &nbsp;
+        <button type="button" class="btn btn-success " >
+          Transfer
+        </button>
+        &nbsp;
+        <button type="button" class="btn btn-primary " >
+          Withdraw
+        </button>
+      </div>
+      <div class="card-footer text-muted">Code Eater</div>
     </div>
+  </>
   );
 }
 
